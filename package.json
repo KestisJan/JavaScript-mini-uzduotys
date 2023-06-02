@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "kintamieji": "nodemon ./mini-excercises/kintamieji.js",
+    "funkcijos": "nodemon ./mini-excercises/funkcijos.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
