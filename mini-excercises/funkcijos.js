@@ -1,3 +1,5 @@
+const { log } = require("console");
+
 console.clear();
 /* 
 Parašyti funkcijas, kurios atitinka pateiktus reikalavimus, jei įvykdo reikiamus testus
@@ -49,8 +51,110 @@ console.log(`------------`);
 
 
 console.log(`             `);
-console.log(`             `);
 
 
 console.log(`Excercise - 3`);
 
+
+/* 
+    priima vieną kintamąjį
+    jei perduotas kintamasis nėra skaičiaus tipo, tai išveda pranešimą “Pateikta netinkamo tipo reikšmė.”
+    priešingu atveju, funkcija tęsia darbą
+    į atskirą kintamąjį įsimena skaičių sudarančių skaitmenų kiekį
+    gražina skaitmenų kiekį
+TESTAI:
+    console.log( skaitmenuKiekisSkaiciuje( 5 ) );
+        rezultatas: 1
+    console.log( skaitmenuKiekisSkaiciuje( 781 ) );
+        rezultatas: 3
+    console.log( skaitmenuKiekisSkaiciuje( 37060123456 ) );
+        rezultatas: 11
+    console.log( skaitmenuKiekisSkaiciuje( true ) );
+        rezultatas: “Pateikta netinkamo tipo reikšmė.”
+    console.log( skaitmenuKiekisSkaiciuje( “asd” ) );
+        rezultatas: “Pateikta netinkamo tipo reikšmė.”
+    console.log( skaitmenuKiekisSkaiciuje( NaN ) );
+        rezultatas: “Pateikta netinkamo tipo reikšmė.”
+*/
+
+function skaitmenuKiekisSkaiciuje(int) {
+    if (Number.isInteger(int)) {
+        return int.toString().length;
+    }
+    return `Pateikta netinkamo tipo reiksme`;
+}
+
+
+
+console.log(skaitmenuKiekisSkaiciuje(5));
+console.log(skaitmenuKiekisSkaiciuje(781));
+console.log(skaitmenuKiekisSkaiciuje(37060123456));
+console.log(skaitmenuKiekisSkaiciuje(true));
+console.log(skaitmenuKiekisSkaiciuje("asd"));
+console.log(skaitmenuKiekisSkaiciuje(NaN));
+
+console.log(`------------`);
+console.log(`             `);
+
+// 4
+
+/*
+priima vieną kintamąjį
+jei perduotas kintamasis nėra sąrašo tipo, tai išveda pranešimą “Pateikta netinkamo tipo reikšmė.”
+jei sąrašas yra tuščias, tai išveda pranešimą “Pateiktas sąrašas negali būti tuščias.”
+priešingu atveju, funkcija tęsia darbą
+pereina per visą pateiktą sąrašą ir į atskirą kintamąjį įsimena skaičių, kuris tuo metu yra didžiausias
+gražina didžiausią surastą skaičių
+TESTAI:
+    console.log( didziausiasSkaiciusSarase( [ 1 ] ) );
+        rezultatas: 1
+    console.log( didziausiasSkaiciusSarase( [ 1, 2, 3 ] ) );
+        rezultatas: 3
+    console.log( didziausiasSkaiciusSarase( [ -5, 78, 14, 0, 18 ] ) );
+        rezultatas: 78
+    console.log( didziausiasSkaiciusSarase( [ 69, 69, 69, 69, 66 ] ) );
+        rezultatas: 69
+    console.log( didziausiasSkaiciusSarase( [ -1, -2, -3, -4, -5, -6, -7, -8 ] ) );
+        rezultatas: -1
+    console.log( didziausiasSkaiciusSarase( “pomidoras” ) );
+        rezultatas: “Pateikta netinkamo tipo reikšmė.”
+    console.log( didziausiasSkaiciusSarase( [] ) );
+        rezultatas: “Pateiktas sąrašas negali būti tuščias.”
+*/
+
+console.log(`Excercise - 4`);
+
+/* 
+priima vieną kintamąjį
+jei perduotas kintamasis nėra sąrašo tipo, tai išveda pranešimą “Pateikta netinkamo tipo reikšmė.”
+jei sąrašas yra tuščias, tai išveda pranešimą “Pateiktas sąrašas negali būti tuščias.”
+priešingu atveju, funkcija tęsia darbą
+pereina per visą pateiktą sąrašą ir į atskirą kintamąjį įsimena skaičių, kuris tuo metu yra didžiausias
+gražina didžiausią surastą skaičių
+TESTAI:
+    console.log( didziausiasSkaiciusSarase( [ 1 ] ) );
+        rezultatas: 1
+    console.log( didziausiasSkaiciusSarase( [ 1, 2, 3 ] ) );
+        rezultatas: 3
+    console.log( didziausiasSkaiciusSarase( [ -5, 78, 14, 0, 18 ] ) );
+        rezultatas: 78
+    console.log( didziausiasSkaiciusSarase( [ 69, 69, 69, 69, 66 ] ) );
+        rezultatas: 69
+    console.log( didziausiasSkaiciusSarase( [ -1, -2, -3, -4, -5, -6, -7, -8 ] ) );
+        rezultatas: -1
+    console.log( didziausiasSkaiciusSarase( “pomidoras” ) );
+        rezultatas: “Pateikta netinkamo tipo reikšmė.”
+    console.log( didziausiasSkaiciusSarase( [] ) );
+        rezultatas: “Pateiktas sąrašas negali būti tuščias.”
+*/
+
+function didziausiasSkaiciusSarase() {
+    if (typeof list === object && list.length > 0) {
+        return Math.max(list);
+    }
+}
+
+
+
+
+console.log(didziausiasSkaiciusSarase[1, 2, 5, 10]);
