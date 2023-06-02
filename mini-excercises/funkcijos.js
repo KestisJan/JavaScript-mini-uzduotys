@@ -77,8 +77,8 @@ TESTAI:
         rezultatas: “Pateikta netinkamo tipo reikšmė.”
 */
 
-function skaitmenuKiekisSkaiciuje(int) {
-    if (Number.isInteger(int)) {
+function skaitmenuKiekisSkaiciuje(skaicius) {
+    if (Number.isInteger(skaicius)) {
         return int.toString().length;
     }
     return `Pateikta netinkamo tipo reiksme`;
