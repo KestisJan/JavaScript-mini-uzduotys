@@ -79,7 +79,7 @@ TESTAI:
 
 function skaitmenuKiekisSkaiciuje(skaicius) {
     if (Number.isInteger(skaicius)) {
-        return int.toString().length;
+        return skaicius.toString().length;
     }
     return `Pateikta netinkamo tipo reiksme`;
 }
