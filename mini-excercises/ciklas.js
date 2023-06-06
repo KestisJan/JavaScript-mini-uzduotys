@@ -56,8 +56,7 @@ for (let i = text.length -1; i >= 0; i-- ) {
 
 console.clear();
 /* 
-            3. Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7
-        atskirai:
+    3. Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
         a. 0 - 11
         b. 8 - 31
         c. -18 - 18
@@ -70,3 +69,9 @@ console.clear();
 console.log(`/////////////`);
 
 console.log(`Exercise-3`);
+
+const a = [0, ]
+
+for (let i = 0; i % 3; i++) {
+
+}
