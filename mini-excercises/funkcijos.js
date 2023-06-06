@@ -124,13 +124,5 @@ TESTAI:
 
 console.log(`Excercise - 4`);
 
-function didziausiasSkaiciusSarase() {
-    if (typeof list === object && list.length > 0) {
-        return Math.max(list);
-    } 
-}
 
 
-
-
-console.log(didziausiasSkaiciusSarase[1, 2, 5, 10]);

@@ -6,6 +6,7 @@
   "scripts": {
     "kintamieji": "nodemon ./mini-excercises/kintamieji.js",
     "funkcijos": "nodemon ./mini-excercises/funkcijos.js",
+    "ciklas": "nodemon ./mini-excercises/ciklas.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
