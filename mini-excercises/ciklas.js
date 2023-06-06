@@ -70,8 +70,10 @@ console.log(`/////////////`);
 
 console.log(`Exercise-3`);
 
-const a = [0, ]
 
-for (let i = 0; i % 3; i++) {
-
+for (let i = 0; i <= 11 ; i++) {
+    const a = [];
+   for (let n = 0; ai % 3; n++ ) {
+       console.log(n);
+    }
 }
